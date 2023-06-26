@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Modify Page</title>
+    <style>
+        h1{
+    text-shadow: 3px 3px 5px skyblue;
+}
+
+form {
+    width: 330px;
+}
+th {
+    padding: 10px;
+}
+td {
+    padding: 10px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
+
+form>input {
+    background-color: rgb(5, 5, 5);
+    border: 0;
+    padding: 4px 5px 5px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <h1>Modify Data</h1>
+    <form method="post">
+        <fieldset>
+            <legend>Modify data</legend>
+            <table>
+                <tr>
+                    <td><label>이름</label></td>
+                    <td><input type="text" name="name" value="<%=data.name %>"></td>
+                </tr>
+                <tr>
+                    <td><label>학번</label></td>
+                    <td><input type="text" name="number" value="<%=data.number %>"></td>
+                </tr>
+                <tr>
+                    <td><label>성별</label></td>
+                    <td><input type="text" name="gender" value="<%=data.gender %>"></td>
+                </tr>
+                <tr>
+                    <td><label>전화번호</label></td>
+                    <td><input type="text" name="phonenumber" value="<%=data.phonenumber %>"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>

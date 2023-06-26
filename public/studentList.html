@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>student List</title>
+    <link rel="stylesheet" href="./studentList.css">
+</head>
+<body>
+    <h1>student List</h1>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>학번</th>
+            <th>성별</th>
+            <th>전화번호</th>
+            <th>수정</th>
+            <th>삭제</th>
+        </tr>
+        <% data.forEach(function (student, index) { %>
+        <tr>
+            <td><%= student.name %></td>
+            <td><%= student.number %></td>
+            <td><%= student.gender %></td>
+            <td><%= student.phonenumber %></td>
+            <td><a href="/modify/<%= student.num %>">수정</a></td>
+            <td><a href="/delete/<%= student.num %>">삭제</a></td>
+        </tr>
+        <% }); %>
+    </table>
+    <form action="/create" method="get">
+        <button type="submit">등록</button>
+     </form>
+</body>
+</html>

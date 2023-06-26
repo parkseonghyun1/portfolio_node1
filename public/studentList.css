@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+h1{
+    text-shadow: 3px 3px 5px skyblue;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+th {
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(5, 5, 5);
+    border: 0;
+    padding: 4px 5px 5px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+tr:nth-child(2n+1) {
+    background-color: white;
+}
+tr:nth-child(2n+0) {
+    background-color: #e3e1e1;
+}
+
+
+
+
+
+
